@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Instagram Home (HTML + CSS)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="inner">
+      <div class="logo">Instagram</div>
+
+      <div class="search">
+        <input type="text" placeholder="Search" aria-label="Search" />
+      </div>
+
+      <div class="actions">
+        <button class="icon-btn" aria-label="Home">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M3 10.5L12 3l9 7.5v9a1.5 1.5 0 0 1-1.5 1.5H4.5A1.5 1.5 0 0 1 3 19.5v-9z"/><path d="M9 21V12h6v9"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Messages">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M21 4H3v14h5l4 3 4-3h5z"/><path d="M7 9h10M7 13h7"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Explore">
+          <svg class="icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Notifications">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 7-3 7h18s-3 0-3-7"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Profile">
+          <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20a8 8 0 0 1 16 0"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="main">
+    <!-- Left: stories + feed -->
+    <section>
+      <!-- Stories -->
+      <div class="stories" aria-label="Stories">
+        <!-- Repeat .story items -->
+        <div class="story">
+          <div class="ring"><img src="https://picsum.photos/seed/u1/200" alt="Story user 1"></div>
+          <div class="name">your_story</div>
+        </div>
+        <div class="story">
+          <div class="ring"><img src="https://picsum.photos/seed/u2/200" alt="Story user 2"></div>
+          <div class="name">jahnavi.k</div>
+        </div>
+        <div class="story">
+          <div class="ring"><img src="https://picsum.photos/seed/u3/200" alt="Story user 3"></div>
+          <div class="name">travel.diary</div>
+        </div>
+        <div class="story">
+          <div class="ring"><img src="https://picsum.photos/seed/u4/200" alt="Story user 4"></div>
+          <div class="name">coffeehouse</div>
+        </div>
+        <div class="story">
+          <div class="ring"><img src="https://picsum.photos/seed/u5/200" alt="Story user 5"></div>
+          <div class="name">artsy_anna</div>
+        </div>
+        <div class="story">
+          <div class="ring"><img src="https://picsum.photos/seed/u6/200" alt="Story user 6"></div>
+          <div class="name">devdaily</div>
+        </div>
+        <div class="story">
+          <div class="ring"><img src="https://picsum.photos/seed/u7/200" alt="Story user 7"></div>
+          <div class="name">fitness.fun</div>
+        </div>
+      </div>
+
+      <!-- Feed -->
+      <div class="feed">
+        <!-- Post 1 -->
+        <article class="post" aria-label="Post by travel.diary">
+          <div class="post-header">
+            <img class="avatar" src="https://picsum.photos/seed/u3/100" alt="travel.diary avatar" />
+            <div class="user">
+              <span class="name">travel.diary</span>
+              <span class="meta">Brahmavara, India • 2h</span>
+            </div>
+            <button class="more" aria-label="More options">⋯</button>
+          </div>
+          <img class="post-media" src="https://picsum.photos/seed/p1/800" alt="Post media 1" />
+          <div class="post-actions">
+            <button class="icon-btn" aria-label="Like">
+              <svg class="icon-sm" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+            </button>
+            <button class="icon-btn" aria-label="Comment">
+              <svg class="icon-sm" viewBox="0 0 24 24"><path d="M21 4H3v14h5l4 3 4-3h5z"/><path d="M7 9h10M7 13h7"/></svg>
+            </button>
+            <button class="icon-btn" aria-label="Share">
+              <svg class="icon-sm" viewBox="0 0 24 24"><path d="M4 12l16-8-6 16-2-6-8-2z"/></svg>
+            </button>
+            <div class="spacer"></div>
+            <button class="icon-btn" aria-label="Save">
+              <svg class="icon-sm saved" viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></svg>
+            </button>
+          </div>
+          <div class="post-stats">
+            <div class="likes">1,284 likes</div>
+            <div class="caption"><span class="user">travel.diary</span> Sunset over the backwaters. The calm hits different here.</div>
+            <div class="view-comments">View all 38 comments</div>
+            <div class="time">2 HOURS AGO</div>
+          </div>
+        </article>
+
+        <!-- Post 2 -->
+        <article class="post" aria-label="Post by coffeehouse">
+          <div class="post-header">
+            <img class="avatar" src="https://picsum.photos/seed/u4/100" alt="coffeehouse avatar" />
+            <div class="user">
+              <span class="name">coffeehouse</span>
+              <span class="meta">Udupi • 5h</span>
+            </div>
+            <button class="more" aria-label="More options">⋯</button>
+          </div>
+          <img class="post-media" src="https://picsum.photos/seed/p2/800" alt="Post media 2" />
+          <div class="post-actions">
+            <button class="icon-btn" aria-label="Like">
+              <svg class="icon-sm" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+            </button>
+            <button class="icon-btn" aria-label="Comment">
+              <svg class="icon-sm" viewBox="0 0 24 24"><path d="M21 4H3v14h5l4 3 4-3h5z"/><path d="M7 9h10M7 13h7"/></svg>
+            </button>
+            <button class="icon-btn" aria-label="Share">
+              <svg class="icon-sm" viewBox="0 0 24 24"><path d="M4 12l16-8-6 16-2-6-8-2z"/></svg>
+            </button>
+            <div class="spacer"></div>
+            <button class="icon-btn" aria-label="Save">
+              <svg class="icon-sm saved" viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></svg>
+            </button>
+          </div>
+          <div class="post-stats">
+            <div class="likes">842 likes</div>
+            <div class="caption"><span class="user">coffeehouse</span> New roast drop! Notes of cocoa and citrus.</div>
+            <div class="view-comments">View all 19 comments</div>
+            <div class="time">5 HOURS AGO</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Right: sidebar -->
+    <aside class="sidebar" aria-label="Sidebar">
+      <div class="profile-row">
+        <img class="avatar" src="https://picsum.photos/seed/you/100" alt="Your avatar" />
+        <div>
+          <div class="name">jahnavi.k</div>
+          <div class="sub">Jahnavi • Brahmavara</div>
+        </div>
+        <div class="switch">Switch</div>
+      </div>
+
+      <div class="suggestions">
+        <h4>Suggestions for you</h4>
+        <div class="sug-item">
+          <img class="avatar" src="https://picsum.photos/seed/s1/100" alt="Suggestion 1" />
+          <div>
+            <div class="name">code.canvas</div>
+            <div class="muted">Followed by devdaily</div>
+          </div>
+          <div class="follow">Follow</div>
+        </div>
+        <div class="sug-item">
+          <img class="avatar" src="https://picsum.photos/seed/s2/100" alt="Suggestion 2" />
+          <div>
+            <div class="name">coastal.vibes</div>
+            <div class="muted">New to Instagram</div>
+          </div>
+          <div class="follow">Follow</div>
+        </div>
+        <div class="sug-item">
+          <img class="avatar" src="https://picsum.photos/seed/s3/100" alt="Suggestion 3" />
+          <div>
+            <div class="name">pixel.painter</div>
+            <div class="muted">Followed by artsy_anna</div>
+          </div>
+          <div class="follow">Follow</div>
+        </div>
+      </div>
+
+      <div class="footer">
+        About • Help • Press • API • Jobs • Privacy • Terms • Locations • Top accounts • Hashtags • Language
+        <br/>© 2025 INSTAGRAM FROM META
+      </div>
+    </aside>
+  </main>
+</body>
+</html>
